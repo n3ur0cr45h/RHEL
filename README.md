@@ -6,8 +6,7 @@
 
 <div align="Right">
 <h6>
-<strong>Documentação</strong>
-<br><strong>https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9</strong>
+<strong><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9">Documentação</a><strong>
 </h6>  
 </div>
 
