@@ -27,7 +27,7 @@
   
 |  ID  | Título                    | Descrição                                                                        | 
 | ---- | ------------------------- | ---------------------------------------------------------------------------------| 
-|  01  |    |       |
+|  01  | Montagem NFS              | Criar um diretório e compartilhar com um Host usando o Network File Share        |
 
 
 
