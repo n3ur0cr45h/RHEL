@@ -1,0 +1,26 @@
+
+##### Servidor (RedHat) #####
+
+1. dnf install rpcbind nfs-utils -y
+
+2. systemctl enable nfs-server rpcbind 
+
+3. systemctl status nfs-server rpcbind 
+
+4. firewall-cmd --permanent --add-service={nfs,rpc-bind,mountd} && firewall-cmd --reload 
+
+5. mkdir -p /NFS && chmod 777 -R /NFS 
+
+6. echo "/NFS 192.168.15.173/24(rw,no_root_squash,async)" > /etc/exports && exportfs -rv 
+
+7. showmount -e localhost 
+
+
+##### Cliente (Debian) #####
+
+
+8. showmount -e 192.168.15.205
+
+9. mkdir /NFS_Client
+
+10. mount -t nfs 192.168.15.205:/NFS /NFS_Client 
