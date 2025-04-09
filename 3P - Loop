@@ -1,0 +1,29 @@
+
+1. dnf install sshpass 
+    Obs.: Não tem como passar a senha em um comando só com o ssh, e se não tiver a chave pública do servidor, essa é uma opção;
+	        Ao invés do IP, pode ser o hostname. Porém, o hostname precisa estar adicionado no arquivo "/etc/hosts" 
+
+2. (No terminal mesmo - Lembrando que os hosts precisam ter o openssh-server instalado)
+
+     for HOST in (IP_1) (IP_2)
+     do
+     sshpass -p '(Senha)' usuario@${HOST} hostname
+     done 
+   
+
+3. Verificar se a saída foram os hostnames 
+
+4. Verificar os diretórios no $PATH - e usar um deles para criar o arquivo "host.sh"
+
+5. vi host.sh 
+
+     #!/usr/bin/bash
+     for HOST in (IP_1) (IP_2)
+     do 
+	   sshpass -p '(Senha)' ssh usuario@${HOST} hostname 
+     done 
+     exit 0
+   
+
+6. chmod +x /root/bin/host.sh && host.sh && echo $? (Verificar o código de saída do escript)
+ 
