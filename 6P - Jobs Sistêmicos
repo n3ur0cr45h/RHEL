@@ -1,0 +1,24 @@
+1. dnf install sysstat -y
+
+2. vi /etc/cron.daily/contagem 
+
+     #!/bin/bash 
+	 iContagem=$(w -h | wc -l)
+	 logger "# -- ${iContagem} Usuários Ativos -- #"
+	 
+3. chmod +x /etc/cron.daily/contagem 
+
+4. vi /etc/systemd/system/sysstat.service.wats/sysstat-collect.timer
+
+     [Unit]
+     Description=Run system activity accounting tool every 2 minutes
+
+     [Timer]
+     OnCalendar=*:00/2
+
+     [Install]
+     WantedBy=sysstat.service
+	 
+5. systemctl daemon-reload && systemctl enable --now sysstat-collect.timer 
+
+6. watch -n 5 ls -l /var/log/sa 
