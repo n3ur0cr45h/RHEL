@@ -1,0 +1,18 @@
+
+1. cp /usr/lib/tmpfiles.d/tmp.conf /etc/tmpfiles.d/tmp.conf 
+
+2. vi /etc/tmpfiles.d/tmp 
+
+     q /tmp 1777 root root 5d
+	 
+3. systemd-tmpfiles --clean /etc/tmpfiles.d/tmp.conf && echo $?
+
+4. vi /etc/tmpfiles.d/momentary.conf 
+
+     d /run/momentary 0700 root root 30s 
+	 
+5. systemd-tmpfiles --create /etc/tmpfiles.d/momentary.conf && ls -ld /run/momentary && touch /run/momentary/test
+
+6. sleep 30 && systemd-tmofiles --clean /etc/tmpfiles.d/momentary.conf && ls -l /run/momentary/test 
+
+
