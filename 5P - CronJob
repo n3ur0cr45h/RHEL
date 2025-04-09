@@ -1,0 +1,22 @@
+
+1. crontab -e 
+
+     */2 * * * Mon-Fri /usr/bin/date >> /RHCSA/primeira_cron.txt 
+	 
+2. crontab -l && while ! test -f /RHCSA/primeira_cron.txt; do sleep 1s; done && cat /RHCSA/primeira_cron.txt 
+
+
+Obs.: 
+
+The fields in the crontab file appear in the following order:
+
+Minutes
+Hours
+Day of month
+Month
+Day of week
+Command
+
+crontab -l	List the jobs for the current user.
+crontab -r	Remove all jobs for the current user.
+crontab -e	Edit jobs for the current user.
