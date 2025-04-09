@@ -1,0 +1,23 @@
+1. mkdir /RHCSA && cd /RHCSA 
+
+2. vi script.sh 
+
+   #!/bin/bash
+   
+   {
+     echo "Bash Script"
+	 echo
+	 echo " # --- # "
+	 echo "Blocos"
+	 echo
+	 lsblk
+	 echo
+	 echo " # --- # "
+	 echo "Armazenamento"
+	 echo 
+	 df -h
+	 echo "# --- #"
+   
+   } > /RHCSA/saida.txt
+   
+3. chmod a+x script.sh  && ./script.sh && cat /RHCSA/saida.txt
