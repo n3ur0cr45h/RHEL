@@ -32,6 +32,8 @@
 |  03  | Loops (RHCSA)             | Montar um script de Loop e adicionar no $PATH                                    |
 |  04  | Agendamento "at" (RHCSA)  | Validar e testar os comandos / agendamentos com o "at"                           |
 |  05  | Tarefa Cron (RHCSA)       | Criar um CronJob e acompanhar através do CronTab                                 |  
+|  06  | Job Sistêmico (RHCSA)     | Criar um Job Sistêmico através do "Cron Daily"                                   |  
+|  07  | tmpfiles (RHCSA)          | Gerenciamento de Diretórios / Arquivos Temporários                               |  
 
 </div> 
 </details>
