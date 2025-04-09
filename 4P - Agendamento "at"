@@ -1,0 +1,12 @@
+
+1. echo "date >> /RHCSA/agenda.txt" | at now +2min && watch -n 2 atq 
+
+2. cat /RHCSA/agenda.txt 
+
+3. at -q b 16:22 ou at -q b now +2min  
+   Obs: "b" é a fila de execução - "a" é a de maior prioridade 
+   
+     echo "Biscoito Time" >> /RHCSA/biscoito.txt 
+     ctrl+D 
+   
+4. watch -n 2 atq 
