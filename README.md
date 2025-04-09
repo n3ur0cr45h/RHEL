@@ -29,6 +29,7 @@
 | ---- | ------------------------- | ---------------------------------------------------------------------------------| 
 |  01  | Montagem NFS              | Criar um diretório e compartilhar com um Host usando o Network File Share        |
 |  02  | Script Simples (RHCSA)    | Criar um Script, mudar para ser executável, e verificar o resultado              |
+|  03  | Loops                     | Montar um script de Loop e adicionar no $PATH                                    |
 
 
 </div> 
