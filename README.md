@@ -34,6 +34,7 @@
 |  05  | Tarefa Cron (RHCSA)       | Criar um CronJob e acompanhar através do CronTab                                 |  
 |  06  | Job Sistêmico (RHCSA)     | Criar um Job Sistêmico através do "Cron Daily"                                   |  
 |  07  | tmpfiles (RHCSA)          | Gerenciamento de Diretórios / Arquivos Temporários                               |  
+|  08  | Syslog (RHCSA)            | Verificação de Registros com o Syslog                                            |  
 
 </div> 
 </details>
