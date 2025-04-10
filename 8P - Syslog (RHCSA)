@@ -1,0 +1,50 @@
+
+1. vi /etc/rsyslog.d/debug.conf
+
+	 *.debug /var/log/messages-debug 
+	
+2. systemctl restart rsyslog && logger -p user.debug "Mensagem - Teste"
+
+3. tail /var/log/messages-debug 
+
+
+System Log Files
+
+Log file	         Type of stored messages
+/var/log/messages	Most syslog messages are logged here. Exceptions include messages about authentication and email processing, 
+                    scheduled job execution, and purely debugging-related messages
+/var/log/secure	    Syslog messages about security and authentication events.
+/var/log/maillog	Syslog messages about the mail server.
+/var/log/cron	    Syslog messages about scheduled job execution.
+/var/log/boot.log	Non-syslog console messages about system startup.
+
+
+Syslog Facilities
+
+Code	Facility	Facility description
+0	    kern	    Kernel messages
+1	    user	    User-level messages
+2	    mail	    Mail system messages
+3	    daemon	    System daemon messages
+4	    auth	    Authentication and security messages
+5	    syslog	    Internal syslog messages
+6	    lpr	        Printer messages
+7	    news	    Network news messages
+8	    uucp	    UUCP protocol messages
+9	    cron	    Clock daemon messages
+10	    authpriv	Non-system authorization messages
+11	    ftp	        FTP protocol messages
+16-23	local0 to local7	Custom local messages
+
+
+Syslog Priorities
+
+Code	Priority	Priority description
+0	    emerg	    System is unusable
+1	    alert	    Action must be taken immediately
+2	    crit	    Critical condition
+3	    err	        Non-critical error condition
+4	    warning	    Warning condition
+5	    notice	    Normal but significant event
+6	    info	    Informational event
+7	    debug	    Debugging-level message
