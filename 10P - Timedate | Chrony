@@ -1,0 +1,14 @@
+
+1. tzselect
+
+2. timedatectl set-timezone America\(Escolher)
+
+3. timedatectl && timedatectl set-ntp true && timedatectl  
+
+4. chronyc sources -v 
+
+5. vi /etc/chrony.conf 
+
+	 # pool... (Comentar essa linha para testar os servidores NTP) 
+	 
+6. systemctl restart chronyd.service && chronyc sources -v 
