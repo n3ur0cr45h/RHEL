@@ -1,0 +1,33 @@
+
+The key to successful use of the journal for troubleshooting and auditing is to limit journal searches to show only relevant output.
+
+1. journalctl _PID=1 (Log do Systemd, sobre algum processo)
+
+2. journalctl _UID=81 (Logs do usuário 81)
+
+4. journalctl -p warning 
+                 emerg	
+                 alert	
+                 crit	
+                 err	
+                 warning
+                 notice	
+                 info	
+                 debug	
+
+5. journalctl --since "-10min"
+
+6. journalctl --since 9:00:00 _SYSTEMD_UNIT="sshd.service"
+
+
+7. mkdir /var/log/journal (Se não existir)
+
+8. vi /etc/systemd/journald.conf
+
+	 [Journal]
+	 Storage=persistent 
+           volatile
+           auto
+           none 
+			 
+9. systemctl restart systemd-journald.service && reboot 
