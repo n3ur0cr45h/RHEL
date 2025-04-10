@@ -1,0 +1,30 @@
+Options of the tar Utility
+One of the following tar command actions is required to perform a tar operation:
+
+-c or --create : Create an archive file.
+-t or --list : List the contents of an archive.
+-x or --extract : Extract an archive.
+
+The following tar command general options are often included:
+
+-v or --verbose : Show the files that are being archived or extracted during the tar operation.
+-f or --file : Follow this option with the archive file name to create or open.
+-p or --preserve-permissions : Preserve the original file permissions when extracting.
+--xattrs : Enable extended attribute support, and store extended file attributes.
+--selinux : Enable SELinux context support, and store SELinux file contexts.
+
+The following tar command compression options are used to select an algorithm:
+
+-a or --auto-compress : Use the archive's suffix to determine the algorithm to use.
+-z or --gzip : Use the gzip compression algorithm, which results in a .tar.gz suffix.
+-j or --bzip2 : Use the bzip2 compression algorithm, which results in a .tar.bz2 suffix.
+-J or --xz : Use the xz compression algorithm, which results in a .tar.xz suffix.
+
+
+1. tar -czf /tmp/etc.tar.gz /etc && tar -tzf /tmp/etc.tar.gz 
+
+2. mkdir /BackupTest
+
+3. tar -xzf /tmp/etc.tar.gz -C /BackupTest 
+
+4. ls -l /BackupTest/etc 
