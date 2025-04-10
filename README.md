@@ -37,6 +37,7 @@
 |  08  | Syslog (RHCSA)            | Verificação de Registros com o Syslog                                            |  
 |  09  | Journal (RHCSA)           | Utilização e Configuração do Jornal Sistêmico                                    |  
 |  10  | Timedatectl Chrony (RHCSA)| Utilização e Configuração do timedatectl e chrony                                |  
+|  11  | Tar (RHCSA)               | Utilização do comando "tar"                                                      |  
 
 </div> 
 </details>
