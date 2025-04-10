@@ -35,7 +35,7 @@
 |  06  | Job Sistêmico (RHCSA)     | Criar um Job Sistêmico através do "Cron Daily"                                   |  
 |  07  | tmpfiles (RHCSA)          | Gerenciamento de Diretórios / Arquivos Temporários                               |  
 |  08  | Syslog (RHCSA)            | Verificação de Registros com o Syslog                                            |  
-
+|  09  | Journal (RHCSA)           | Utilização e Configuração do Jornal Sistêmico                                    |  
 </div> 
 </details>
 
