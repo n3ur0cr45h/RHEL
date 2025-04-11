@@ -1,0 +1,23 @@
+
+Options Enabled with rsync -a (Archive Mode)
+
+Option	        Description
+-r, --recursive	Synchronize the whole directory tree recursively
+-l, --links	    Synchronize symbolic links
+-p, --perms	    Preserve permissions
+-t, --times	    Preserve time stamps
+-g, --group	    Preserve group ownership
+-o, --owner	    Preserve the owner of the files
+-D, --devices	Preserve device files
+
+# Aqui o teste foi do RedHat para um Debian - No Debian, precisava ter o rsync instalado. 
+
+1. Host_1: ssh user@host_2 
+
+2. Host_2: mkdir ~/ServerLogs 
+
+3. Host_1: rsync -av /var/log user@host_2:/home/user_1/ServerLogs && logger "Log files Synchronized"
+
+4. Host_1: rsync -av /var/log user@host_2:/home/user_1/ServerLogs
+
+5. Host_2: tail -n 5 ~/ServerLogs/log/messages
