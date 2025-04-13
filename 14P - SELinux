@@ -1,0 +1,26 @@
+
+SELinux (Security Enhanced Linux) 
+SELinux enforces a set of access rules that explicitly define allowed actions between processes and resources
+
+
+Enforcing : SELinux enforces the loaded policies. This mode is the default in Red Hat Enterprise Linux.
+
+Permissive : SELinux loads the policies and is active, but instead of enforcing access control rules, it logs access violations. This mode is helpful for testing and troubleshooting applications and rules.
+
+Disabled : SELinux is turned off. SELinux violations are not denied or logged. Disabling SELinux is strongly discouraged.
+
+
+
+1. getenforce 
+
+2. vi /etc/selinux/config 
+
+     SELINUX=enforcing 
+	         permissive 
+			 disabled 
+			 
+3. setenforce 0 && getenforce 
+
+4. reboot 
+
+5. getenforce 
