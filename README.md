@@ -40,6 +40,7 @@
 |  11  | Tar (RHCSA)               | Utilização do comando "tar"                                                      |  
 |  12  | rsync (RHCSA)             | Utilização do comando "rsync"                                                    |  
 |  13  | "nice" e "renice" (RHCSA) | Teste de Agendamento de CPU e Mudança de Prioridades da CPU                      |  
+|  14  | SELinux (RHCSA)           | Mudança de Perfis no SELinux                                                     |  
 
 </div> 
 </details>
