@@ -39,6 +39,7 @@
 |  10  | Timedatectl (RHCSA)       | Utilização e Configuração do timedatectl e chrony                                |  
 |  11  | Tar (RHCSA)               | Utilização do comando "tar"                                                      |  
 |  12  | rsync (RHCSA)             | Utilização do comando "rsync"                                                    |  
+|  13  | "nice" e "renice" (RHCSA) | Teste de Agendamento de CPU e Mudança de Prioridades da CPU                      |  
 
 </div> 
 </details>
