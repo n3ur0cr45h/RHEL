@@ -36,7 +36,7 @@
 |  07  | tmpfiles (RHCSA)          | Gerenciamento de Diretórios / Arquivos Temporários                               |  
 |  08  | Syslog (RHCSA)            | Verificação de Registros com o Syslog                                            |  
 |  09  | Journal (RHCSA)           | Utilização e Configuração do Jornal Sistêmico                                    |  
-|  10  | Timedatectl Chrony (RHCSA)| Utilização e Configuração do timedatectl e chrony                                |  
+|  10  | Timedatectl (RHCSA)       | Utilização e Configuração do timedatectl e chrony                                |  
 |  11  | Tar (RHCSA)               | Utilização do comando "tar"                                                      |  
 |  12  | rsync (RHCSA)             | Utilização do comando "rsync"                                                    |  
 
